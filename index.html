@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leonardo Villa — Desenvolvedor Full-Stack</title>
+  <meta name="description" content="Portfólio técnico de Leonardo Villa — projetos full-stack em Laravel, React, Flutter, Python e automação de Power BI com IA." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <span class="brand">Leonardo Villa</span>
+      <nav class="nav">
+        <a href="#projetos">Projetos</a>
+        <a href="#skills">Stack</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+        <span aria-hidden="true">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <h1>Leonardo da Silva Villa</h1>
+        <p class="tagline">
+          Desenvolvedor full-stack. Construo sistemas de ponta a ponta —
+          back-end em PHP/Laravel e Python, front-end em React/TypeScript,
+          apps mobile em Flutter e React Native, e automação de dados com
+          Power BI e IA.
+        </p>
+        <div class="hero-links">
+          <a class="btn btn-primary" href="https://github.com/LeonardoVilla" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="mailto:leonardovilla.tech@gmail.com">E-mail</a>
+          <a class="btn" href="https://www.leonardovilla.com.br/" target="_blank" rel="noopener">Site pessoal</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="wrap">
+        <h2>Stack</h2>
+        <ul class="badge-list">
+          <li>PHP / Laravel</li>
+          <li>React / TypeScript</li>
+          <li>Flutter / Dart</li>
+          <li>React Native / Expo</li>
+          <li>Python / Django</li>
+          <li>Power BI (TMDL / PBIR)</li>
+          <li>Docker</li>
+          <li>PostgreSQL / MySQL</li>
+          <li>WebSocket (Laravel Reverb)</li>
+          <li>RBAC / Auditoria</li>
+          <li>SSO (Microsoft Entra ID)</li>
+          <li>Automação com IA (Claude)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projetos" class="projects">
+      <div class="wrap">
+        <h2>Projetos em destaque</h2>
+
+        <div class="project-grid">
+
+          <article class="card card-featured">
+            <div class="card-media">
+              <img src="assets/img/licitafacil-dashboard.png" alt="Dashboard do LicitaFácil" loading="lazy" />
+              <img src="assets/img/licitafacil-licitacoes.png" alt="Tela de processos licitatórios do LicitaFácil" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <h3>LicitaFácil</h3>
+              <p>
+                Sistema de gestão de compras públicas para prefeituras: planejamento
+                anual de contratações, pesquisa de preços, processos licitatórios,
+                credenciamento de fornecedores e contratos com aditivos. Dashboard de
+                indicadores, atualização de fase em tempo real via WebSocket, RBAC
+                granular com 4 papéis, auditoria completa e trilha de anexos em S3.
+                88 testes automatizados (Pest) e suíte Vitest no front-end.
+              </p>
+              <div class="tech-tags">
+                <span>Laravel 13</span><span>React 19</span><span>TypeScript</span>
+                <span>PostgreSQL</span><span>Redis</span><span>Laravel Reverb</span>
+                <span>Docker Compose</span><span>Pest</span>
+              </div>
+              <div class="card-links">
+                <a href="https://github.com/LeonardoVilla/LicitaFacil" target="_blank" rel="noopener">Ver repositório →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-body">
+              <h3>pbip-autopilot-fabric</h3>
+              <p>
+                <strong>Power BI as Code</strong>: gera painéis Power BI inteiramente
+                por arquivo de texto (modelo semântico em TMDL, relatório em PBIR),
+                sem construir nada manualmente na interface — usando agentes de IA
+                (Claude) para escrever os artefatos. Sucessor do
+                <a href="https://github.com/LeonardoVilla/PowerBI-Autopilot" target="_blank" rel="noopener">PowerBI-Autopilot</a>
+                (pipeline legado em <code>.pbix</code> via TOM/.NET, validado em produção),
+                migrado para o formato PBIP oficialmente suportado pela Microsoft.
+                Parte da mesma linha de trabalho de Skills de IA aplicadas a Power BI
+                que venho desenvolvendo.
+              </p>
+              <div class="tech-tags">
+                <span>Power BI</span><span>TMDL / PBIR</span><span>Python</span>
+                <span>.NET 6</span><span>Claude / IA</span>
+              </div>
+              <div class="card-links">
+                <a href="https://github.com/LeonardoVilla/pbip-autopilot-fabric" target="_blank" rel="noopener">Ver repositório →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-body">
+              <h3>Krayin Plus</h3>
+              <p>
+                Fork do <a href="https://krayincrm.com" target="_blank" rel="noopener">Krayin CRM</a>
+                (Laravel) estendido sem alterar o core: módulos próprios de
+                Faturas, Chamados/Suporte e Projetos com quadro Kanban, login via
+                Microsoft Entra ID (OAuth2/Socialite) convivendo com o login
+                padrão, trilha de auditoria automática para qualquer model
+                (presente ou futuro) e tradução pt-BR completa.
+              </p>
+              <div class="tech-tags">
+                <span>Laravel</span><span>Vue 3</span><span>Tailwind CSS</span>
+                <span>MySQL</span><span>OAuth2 / Socialite</span>
+              </div>
+              <div class="card-links">
+                <a href="https://github.com/LeonardoVilla/krayin-plus" target="_blank" rel="noopener">Ver repositório →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-body">
+              <h3>SuiteCRM Plus</h3>
+              <p>
+                Customização enterprise sobre o SuiteCRM: SSO com Microsoft Entra ID
+                via fluxo OAuth2 aditivo (sem substituir a autenticação SAML nativa),
+                trilha de auditoria completa (quem, quando, quais campos mudaram) e
+                tradução pt-BR profunda nos módulos principais. Repositório privado —
+                código disponível sob solicitação.
+              </p>
+              <div class="tech-tags">
+                <span>PHP 8.3</span><span>SuiteCRM</span><span>MySQL</span>
+                <span>Smarty</span><span>OAuth2</span>
+              </div>
+              <div class="card-links">
+                <span class="link-disabled">Código privado</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-body">
+              <h3>Villatrip</h3>
+              <p>
+                App Flutter offline-first para gerenciar roteiro de viagens: cadastro
+                de locais e rolês do dia com horários, transporte e gastos, relatórios
+                por período, dados persistidos em SQLite local e sincronização
+                automática com o Firestore por usuário autenticado.
+              </p>
+              <div class="tech-tags">
+                <span>Flutter</span><span>Dart</span><span>SQLite</span>
+                <span>Firebase / Firestore</span>
+              </div>
+              <div class="card-links">
+                <a href="https://github.com/LeonardoVilla/villatrip" target="_blank" rel="noopener">Ver repositório →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-body">
+              <h3>Tripvilla</h3>
+              <p>
+                Mesmo conceito de roteiro de viagens do Villatrip, implementado em
+                React Native (Expo) com Firebase Auth e Firestore — a mesma solução
+                de produto explorada em duas stacks mobile diferentes.
+              </p>
+              <div class="tech-tags">
+                <span>React Native</span><span>Expo</span><span>Firebase</span>
+                <span>TypeScript</span>
+              </div>
+              <div class="card-links">
+                <a href="https://github.com/LeonardoVilla/tripvilla" target="_blank" rel="noopener">Ver repositório →</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <h2 class="secondary-title">Outros projetos</h2>
+        <div class="project-grid project-grid-compact">
+
+          <article class="card card-compact">
+            <h3>Roles and Permissions</h3>
+            <p>CRUD de RBAC (papéis/permissões) em Laravel + spatie/laravel-permission, front-end React via Inertia.js e Radix UI.</p>
+            <div class="card-links">
+              <a href="https://github.com/LeonardoVilla/RolesAndPermissions" target="_blank" rel="noopener">Ver repositório →</a>
+            </div>
+          </article>
+
+          <article class="card card-compact">
+            <h3>Django CRUD</h3>
+            <p>CRUD básico em Django/Python, publicado no Render — cobrindo o back-end fora do ecossistema PHP/JS.</p>
+            <div class="card-links">
+              <a href="https://github.com/LeonardoVilla/DjangoCRUD-basico" target="_blank" rel="noopener">Ver repositório →</a>
+            </div>
+          </article>
+
+          <article class="card card-compact">
+            <h3>Conversor de Moedas</h3>
+            <p>Aplicação Java para conversão de moedas — exercício de linguagem tipada fora do ecossistema web.</p>
+            <div class="card-links">
+              <a href="https://github.com/LeonardoVilla/conversormoedas" target="_blank" rel="noopener">Ver repositório →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contact">
+      <div class="wrap">
+        <h2>Contato</h2>
+        <p>Aberto a oportunidades e conversas sobre projetos.</p>
+        <div class="hero-links">
+          <a class="btn btn-primary" href="mailto:leonardovilla.tech@gmail.com">leonardovilla.tech@gmail.com</a>
+          <a class="btn" href="https://github.com/LeonardoVilla" target="_blank" rel="noopener">github.com/LeonardoVilla</a>
+          <a class="btn" href="https://www.leonardovilla.com.br/" target="_blank" rel="noopener">leonardovilla.com.br</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Leonardo da Silva Villa — <span id="year"></span></p>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
