@@ -173,6 +173,7 @@ h1, h2, h3 { line-height: 1.2; }
   background: var(--border);
 }
 .card-media img { width: 100%; display: block; object-fit: cover; }
+.card-media img.project-preview { height: 230px; object-position: top; }
 .card-media-single { grid-template-columns: 1fr; }
 
 .tech-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; }
